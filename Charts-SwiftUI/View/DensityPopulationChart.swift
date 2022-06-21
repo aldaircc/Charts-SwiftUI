@@ -10,13 +10,33 @@ import Charts
 
 struct DensityPopulationChart: View {
     var body: some View {
+
         VStack {
-            Text("Hello, World!")
-            Chart(densityData) { element in
-                BarMark(
-                    x: .value("Countries", element.name),
-                    y: .value("Population", element.density))
+            Text("Gráfico Nº1 \n Densidad Poblacional de países con mayor superficie en el mundo \n (Habitantes por Km2)")
+                .multilineTextAlignment(.center)
+                .font(.headline)
+                .foregroundColor(.blue)
+            
+            VStack {
+                Chart(densityData) { element in
+                    BarMark(
+                        x: .value("Countries", element.name),
+                        y: .value("Population", element.density))
+                    .annotation {
+                        Text("\(element.density)")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.gray)
+                    }
+                }
+                
             }
+            .padding(10)
+            .overlay {
+                RoundedRectangle(cornerRadius: 10, style: .circular)
+                    .stroke(lineWidth: 2)
+            }
+            
         }
     }
 }
