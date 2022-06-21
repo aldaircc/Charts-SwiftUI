@@ -14,6 +14,7 @@
 		05ACB48B2861521D00E9B330 /* Charts_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB48A2861521D00E9B330 /* Charts_SwiftUITests.swift */; };
 		05ACB4952861521D00E9B330 /* Charts_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4942861521D00E9B330 /* Charts_SwiftUIUITests.swift */; };
 		05ACB4972861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4962861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift */; };
+		05ACB4A52861537A00E9B330 /* CountryPopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4A42861537A00E9B330 /* CountryPopulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		05ACB4902861521D00E9B330 /* Charts-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Charts-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05ACB4942861521D00E9B330 /* Charts_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		05ACB4962861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05ACB4A42861537A00E9B330 /* CountryPopulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPopulation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		05ACB4782861521B00E9B330 /* Charts-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				05ACB4A3286152D800E9B330 /* Model */,
 				05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */,
 				05ACB47B2861521B00E9B330 /* ContentView.swift */,
 				05ACB47D2861521C00E9B330 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				05ACB4962861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Charts-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		05ACB4A3286152D800E9B330 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05ACB4A42861537A00E9B330 /* CountryPopulation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05ACB4A52861537A00E9B330 /* CountryPopulation.swift in Sources */,
 				05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */,
 				05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */,
 			);
