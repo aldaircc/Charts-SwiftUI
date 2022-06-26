@@ -6,11 +6,37 @@
 //
 
 import SwiftUI
+import Combine
+import Charts
+
+final class GrowingObservable: ObservableObject {
+    @Published var data: [GrowingRate] = []
+    var subscribers = Set<AnyCancellable>()
+    
+    init() {
+        Timer.publish(every: 2, on: .main, in: .default)
+            .autoconnect()
+            .receive(on: DispatchQueue.main)
+            .sink { _ in
+                print("Completed")
+            } receiveValue: { newValue in
+                print(newValue)
+                let index = self.data.count
+                let dataGrowing = dataGrowingRate[index]
+                self.data.append(dataGrowing)
+            }
+            .store(in: &subscribers)
+    }
+    
+}
 
 struct GrowingRateChart: View {
+    @StateObject var growingOb = GrowingObservable()
+    
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text("Growing Rate")
+            
         }
     }
 }
