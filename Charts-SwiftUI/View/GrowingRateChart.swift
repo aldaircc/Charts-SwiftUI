@@ -12,7 +12,8 @@ import Charts
 final class GrowingObservable: ObservableObject {
     @Published var data: [GrowingRate] = []
     var subscribers = Set<AnyCancellable>()
-    let timerPublisher = Timer.publish(every: 1, on: .main, in: .default)
+    let timerPublisher = Timer.publish(every: 0.5, on: .main, in: .default)
+    var counter = 0
     
     init() {
         timerPublisher
@@ -38,26 +39,35 @@ struct GrowingRateChart: View {
     
     var body: some View {
         VStack {
-            Text("Growing Rate")
-            Chart(growingOb.data) { grow in
-                BarMark(
-                    x: .value("Year", "\(grow.year)"),
-                    y: .value("Population", grow.population))
-            }
-            .chartXAxis {
-                AxisMarks { value in
-                    AxisValueLabel {
-                        let year = growingOb.data[value.index]
-                        Text(verbatim: "\(year.year)")
-                            .fontWeight(.black)
-                            .rotationEffect(.degrees(90))
-                            .offset(x: 0, y: 5)
-                            .padding(.vertical, 8)
+            Text("Perú: Población y tasa de crecimiento, 1950-2070")
+            VStack {
+                Chart(growingOb.data) { grow in
+                    BarMark(
+                        x: .value("Year", "\(grow.year)"),
+                        y: .value("Population", grow.population))
+                }
+                .chartXAxis {
+                    AxisMarks { value in
+                        AxisValueLabel {
+                            let year = growingOb.data[value.index]
+                            Text(verbatim: "\(year.year)")
+                                .fontWeight(.black)
+                                .rotationEffect(.degrees(90))
+                                .offset(x: 0, y: 5)
+                                .padding(.vertical, 8)
+                        }
                     }
                 }
+                .animation(.easeOut(duration: 1), value: growingOb.data)
             }
-            .animation(.easeOut(duration: 1), value: growingOb.data)
+            .padding(10)
+            .overlay {
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.orange)
+            }
         }
+        .padding()
     }
 }
 
