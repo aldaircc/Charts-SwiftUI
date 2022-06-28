@@ -11,7 +11,8 @@ import SwiftUI
 struct Charts_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //DensityPopulationChart()
+            GrowingRateChart()
         }
     }
 }
