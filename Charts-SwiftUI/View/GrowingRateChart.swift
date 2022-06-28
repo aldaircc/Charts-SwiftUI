@@ -40,6 +40,9 @@ struct GrowingRateChart: View {
     var body: some View {
         VStack {
             Text("Perú: Población y tasa de crecimiento, 1950-2070")
+                .fontWeight(.black)
+                .multilineTextAlignment(.center)
+            
             VStack {
                 Chart(growingOb.data) { grow in
                     BarMark(
