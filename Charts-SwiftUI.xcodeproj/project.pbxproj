@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
+		056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CD286AB09E00D17994 /* NatalityRate.swift */; };
 		05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */; };
 		05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB47B2861521B00E9B330 /* ContentView.swift */; };
 		05ACB47E2861521C00E9B330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05ACB47D2861521C00E9B330 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
+		056BE3CD286AB09E00D17994 /* NatalityRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRate.swift; sourceTree = "<group>"; };
 		05ACB4762861521B00E9B330 /* Charts-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_SwiftUIApp.swift; sourceTree = "<group>"; };
 		05ACB47B2861521B00E9B330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				05ACB4A42861537A00E9B330 /* CountryPopulation.swift */,
 				05E489E62868110D00E9D028 /* GrowingRate.swift */,
+				056BE3CD286AB09E00D17994 /* NatalityRate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				05ACB4A72861580600E9B330 /* DensityPopulationChart.swift */,
 				05E489E4286810DB00E9D028 /* GrowingRateChart.swift */,
+				056BE3CB286AB04500D17994 /* NatalityRateChart.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,8 +295,10 @@
 				05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */,
 				05E489E5286810DB00E9D028 /* GrowingRateChart.swift in Sources */,
 				05ACB4A52861537A00E9B330 /* CountryPopulation.swift in Sources */,
+				056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */,
 				05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */,
 				05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */,
+				056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
