@@ -27,6 +27,10 @@ struct NatalityRateChart: View {
                     .symbol(by: .value("Types", tipo.type.rawValue))
                 }
             }
+            .chartForegroundStyleScale([
+                "Natalidad": .black,
+                "Mortalidad": .green
+            ])
         }
     }
 }
