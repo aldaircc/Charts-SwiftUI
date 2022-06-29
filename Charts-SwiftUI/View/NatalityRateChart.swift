@@ -13,6 +13,20 @@ struct NatalityRateChart: View {
         VStack {
             Text("Perú: Tasa bruta de natalidad y mortalidad, 1950-2050 (Por mil)")
                 .multilineTextAlignment(.center)
+                .fontWeight(.heavy)
+            
+            Chart {
+                ForEach(natalityData, id: \.type) { tipo in
+                    
+                    ForEach(natalityData) { rate in
+                        LineMark(
+                            x: .value("Year", "\(tipo.year)"),
+                            y: .value("Rate Index", tipo.value))
+                    }
+                    .foregroundStyle(by: .value("Types", tipo.type.rawValue))
+                    .symbol(by: .value("Types", tipo.type.rawValue))
+                }
+            }
         }
     }
 }
