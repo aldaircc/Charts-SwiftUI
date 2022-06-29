@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import Charts
 
 struct NatalityRateChart: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Perú: Tasa bruta de natalidad y mortalidad, 1950-2050 (Por mil)")
+                .multilineTextAlignment(.center)
+        }
     }
 }
 

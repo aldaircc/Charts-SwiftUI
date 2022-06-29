@@ -12,7 +12,8 @@ struct Charts_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             //DensityPopulationChart()
-            GrowingRateChart()
+            //GrowingRateChart()
+            NatalityRateChart()
         }
     }
 }
