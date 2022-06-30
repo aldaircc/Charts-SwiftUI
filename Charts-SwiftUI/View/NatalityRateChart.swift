@@ -25,6 +25,9 @@ struct NatalityRateChart: View {
                             .foregroundStyle(by: .value("Types", typeRate.type.rawValue))
                             .symbol(by: .value("Types", typeRate.type.rawValue))
                         }
+                        .annotation {
+                            Text("Tasa bruta de \(typeRate.type.rawValue)")
+                        }
                         
                     }
                 }
