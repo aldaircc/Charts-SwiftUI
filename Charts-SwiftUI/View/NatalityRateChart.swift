@@ -14,24 +14,33 @@ struct NatalityRateChart: View {
             Text("Perú: Tasa bruta de natalidad y mortalidad, 1950-2050 (Por mil)")
                 .multilineTextAlignment(.center)
                 .fontWeight(.heavy)
-            
-            Chart {
-                ForEach(natalityData, id: \.type) { tipo in
-                    
-                    ForEach(natalityData) { rate in
-                        LineMark(
-                            x: .value("Year", "\(tipo.year)"),
-                            y: .value("Rate Index", tipo.value))
+            VStack {
+                Chart {
+                    ForEach(rateData, id: \.type) { typeRate in
+                        
+                        ForEach(typeRate.rates) { rate in
+                            LineMark(
+                                x: .value("Year", String(describing: rate.year)),
+                                y: .value("Rate", rate.value))
+                            .foregroundStyle(by: .value("Types", typeRate.type.rawValue))
+                            .symbol(by: .value("Types", typeRate.type.rawValue))
+                        }
+                        
                     }
-                    .foregroundStyle(by: .value("Types", tipo.type.rawValue))
-                    .symbol(by: .value("Types", tipo.type.rawValue))
                 }
+                .chartForegroundStyleScale([
+                    "Natalidad": .black,
+                    "Mortalidad": .green
+                ])
             }
-            .chartForegroundStyleScale([
-                "Natalidad": .black,
-                "Mortalidad": .green
-            ])
+            .padding()
+            .overlay {
+                RoundedRectangle(cornerRadius: 15, style: .circular)
+                    .stroke(lineWidth: 2)
+                    .foregroundColor(.orange)
+            }
         }
+        .padding()
     }
 }
 
