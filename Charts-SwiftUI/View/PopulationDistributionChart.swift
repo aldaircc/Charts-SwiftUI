@@ -14,6 +14,7 @@ struct PopulationDistributionChart: View {
             RectangleMark(xStart: .value("Percent", 0),
                           xEnd: .value("Percent", object.percent),
                           y: .value("Age", object.ageRange.rawValue))
+            .foregroundStyle(by: .value("Genre", object.genre.rawValue))
         }
     }
 }
