@@ -10,8 +10,8 @@ import Charts
 
 struct PopulationDistributionChart: View {
     var body: some View {
-        Chart {
-            
+        VStack {
+            Text("")
         }
     }
 }
