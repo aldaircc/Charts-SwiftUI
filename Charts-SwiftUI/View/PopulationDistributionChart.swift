@@ -16,6 +16,7 @@ struct PopulationDistributionChart: View {
                           y: .value("Age", object.ageRange.rawValue))
             .foregroundStyle(by: .value("Genre", object.genre.rawValue))
         }
+        .chartYScale(domain: AgeRange.zeroToFour.rawValue...AgeRange.tenToFourteen.rawValue)
     }
 }
 
