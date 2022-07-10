@@ -12,8 +12,18 @@ enum Genre: String, CaseIterable {
     case female = "Female"
 }
 
-enum AgeRange: Int, CaseIterable {
+enum AgeRange: Int, CaseIterable, CustomStringConvertible {
     case zeroToFour = 1, fiveToNine = 2, tenToFourteen = 3
+    var description: String {
+        switch self {
+        case .zeroToFour:
+            return "0-4"
+        case .fiveToNine:
+            return "5-9"
+        case .tenToFourteen:
+            return "10-14"
+        }
+    }
 }
 
 struct DistributionPopulation: Identifiable {

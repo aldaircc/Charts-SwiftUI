@@ -16,7 +16,17 @@ struct PopulationDistributionChart: View {
                           y: .value("Age", object.ageRange.rawValue))
             .foregroundStyle(by: .value("Genre", object.genre.rawValue))
         }
-        .chartYScale(domain: AgeRange.zeroToFour.rawValue...AgeRange.tenToFourteen.rawValue)
+//        .chartYScale(domain: AgeRange.zeroToFour.rawValue...AgeRange.tenToFourteen.rawValue)
+        .chartYAxis {
+            
+            AxisMarks { value in
+                AxisGridLine()
+                AxisTick()
+                AxisValueLabel {
+                    Text("\(value.index)")
+                }
+            }
+        }
     }
 }
 
