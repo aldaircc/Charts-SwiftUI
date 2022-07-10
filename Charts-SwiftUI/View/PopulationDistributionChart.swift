@@ -10,8 +10,10 @@ import Charts
 
 struct PopulationDistributionChart: View {
     var body: some View {
-        VStack {
-            Text("")
+        Chart(distributionData) { object in
+            RectangleMark(xStart: .value("Percent", 0),
+                          xEnd: .value("Percent", object.percent),
+                          y: .value("Age", object.ageRange.rawValue))
         }
     }
 }
