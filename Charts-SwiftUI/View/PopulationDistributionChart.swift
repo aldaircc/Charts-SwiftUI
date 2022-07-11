@@ -13,17 +13,17 @@ struct PopulationDistributionChart: View {
         Chart(distributionData) { object in
             RectangleMark(xStart: .value("Percent", 0),
                           xEnd: .value("Percent", object.percent),
-                          y: .value("Age", object.ageRange.description)) //object.ageRange.rawValue))
+                          y: .value("Age", object.ageRange.description))
             .foregroundStyle(by: .value("Genre", object.genre.rawValue))
         }
-//        .chartYScale(domain: AgeRange.zeroToFour.description...AgeRange.tenToFourteen.description)
         .chartYAxis {
-
             AxisMarks { value in
                 AxisGridLine()
                 AxisTick()
                 AxisValueLabel {
                     Text("\(distributionData[value.index].ageRange.description)")
+                        .foregroundColor(.black.opacity(0.8))
+                        .fontWeight(.bold)
                 }
             }
         }

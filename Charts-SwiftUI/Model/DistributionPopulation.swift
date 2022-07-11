@@ -14,6 +14,7 @@ enum Genre: String, CaseIterable {
 
 enum AgeRange: Int, CaseIterable, CustomStringConvertible {
     case zeroToFour = 1, fiveToNine = 2, tenToFourteen = 3
+    
     var description: String {
         switch self {
         case .zeroToFour:
