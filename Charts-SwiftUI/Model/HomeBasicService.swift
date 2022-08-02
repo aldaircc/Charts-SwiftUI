@@ -21,5 +21,7 @@ struct HomeBasicService: Identifiable {
 
 let basicServiceData: [HomeBasicService] = [
     HomeBasicService(location: "Nacional", percentage: 90.8, waterService: .withService),
-    HomeBasicService(location: "Lima Metropolitana", percentage: 97.6, waterService: .withService)
+    HomeBasicService(location: "Nacional", percentage: 9.2, waterService: .withoutService),
+    HomeBasicService(location: "Lima Metropolitana", percentage: 97.6, waterService: .withService),
+    HomeBasicService(location: "Lima Metropolitana", percentage: 2.4, waterService: .withService)
 ]
