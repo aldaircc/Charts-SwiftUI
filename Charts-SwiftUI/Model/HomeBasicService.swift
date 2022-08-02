@@ -19,4 +19,7 @@ struct HomeBasicService: Identifiable {
     let waterService: WaterService
 }
 
-let basicServiceData: [HomeBasicService] = []
+let basicServiceData: [HomeBasicService] = [
+    HomeBasicService(location: "Nacional", percentage: 90.8, waterService: .withService),
+    HomeBasicService(location: "Lima Metropolitana", percentage: 97.6, waterService: .withService)
+]
