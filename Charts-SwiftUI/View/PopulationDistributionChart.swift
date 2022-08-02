@@ -17,12 +17,12 @@ struct PopulationDistributionChart: View {
             .foregroundStyle(by: .value("Genre", object.genre.rawValue))
         }
         .chartXAxis {
-            let percentRanges = [-12, -10.0, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10, 12]
+            let percentRanges = [-12, -10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10, 12]
             AxisMarks(values: percentRanges) { value in
                 AxisGridLine()
                 AxisTick()
                 AxisValueLabel {
-                    Text(verbatim: "\(percentRanges[value.index])")
+                    Text(verbatim: "\(percentRanges[value.index])%")
                 }
             }
         }
