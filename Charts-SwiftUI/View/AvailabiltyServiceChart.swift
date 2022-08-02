@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import Charts
 
 struct AvailabiltyServiceChart: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Chart(basicServiceData) { obj in
+            BarMark(
+                x: .value("Location", obj.location),
+                y: .value("Percentage", obj.percentage)
+            )
+            .foregroundStyle(by: .value("Location", obj.waterService.rawValue))
+        }
     }
 }
 
