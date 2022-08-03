@@ -15,9 +15,14 @@ struct AvailabiltyServiceChart: View {
                 x: .value("Location", obj.location),
                 y: .value("Percentage", obj.percentage)
             )
-            .annotation {
+            .annotation(position: .overlay,
+                        alignment: .center,
+                        spacing: 0,
+                        content: {
                 Text(verbatim: "\(obj.percentage)")
-            }
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black.opacity(0.5))
+            })
             .foregroundStyle(by: .value("Location", obj.waterService.rawValue))
         }
         .chartForegroundStyleScale([
