@@ -31,6 +31,7 @@ struct AvailabiltyServiceChart: View {
                 })
                 .foregroundStyle(by: .value("Location", obj.waterService.rawValue))
             }
+            .chartLegend(alignment: .center, spacing: 15)
             .chartForegroundStyleScale([
                 "Con servicio de agua por red pública 1": .teal.opacity(0.8),
                 "Sin servicio de agua por red pública 2": .red.opacity(0.5)])
