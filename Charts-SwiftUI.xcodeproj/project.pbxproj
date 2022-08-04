@@ -18,6 +18,8 @@
 		05ACB4972861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4962861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift */; };
 		05ACB4A52861537A00E9B330 /* CountryPopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4A42861537A00E9B330 /* CountryPopulation.swift */; };
 		05ACB4A82861580600E9B330 /* DensityPopulationChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4A72861580600E9B330 /* DensityPopulationChart.swift */; };
+		05C9663D2898D1AD00CA1E97 /* HomeBasicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9663C2898D1AD00CA1E97 /* HomeBasicService.swift */; };
+		05C9663F2898D58200CA1E97 /* AvailabiltyServiceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9663E2898D58200CA1E97 /* AvailabiltyServiceChart.swift */; };
 		05E489E5286810DB00E9D028 /* GrowingRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E489E4286810DB00E9D028 /* GrowingRateChart.swift */; };
 		05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E489E62868110D00E9D028 /* GrowingRate.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		05ACB4962861521D00E9B330 /* Charts_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05ACB4A42861537A00E9B330 /* CountryPopulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPopulation.swift; sourceTree = "<group>"; };
 		05ACB4A72861580600E9B330 /* DensityPopulationChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DensityPopulationChart.swift; sourceTree = "<group>"; };
+		05C9663C2898D1AD00CA1E97 /* HomeBasicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBasicService.swift; sourceTree = "<group>"; };
+		05C9663E2898D58200CA1E97 /* AvailabiltyServiceChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabiltyServiceChart.swift; sourceTree = "<group>"; };
 		05E489E4286810DB00E9D028 /* GrowingRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingRateChart.swift; sourceTree = "<group>"; };
 		05E489E62868110D00E9D028 /* GrowingRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +151,7 @@
 				05ACB4A42861537A00E9B330 /* CountryPopulation.swift */,
 				05E489E62868110D00E9D028 /* GrowingRate.swift */,
 				056BE3CD286AB09E00D17994 /* NatalityRate.swift */,
+				05C9663C2898D1AD00CA1E97 /* HomeBasicService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				05ACB4A72861580600E9B330 /* DensityPopulationChart.swift */,
 				05E489E4286810DB00E9D028 /* GrowingRateChart.swift */,
 				056BE3CB286AB04500D17994 /* NatalityRateChart.swift */,
+				05C9663E2898D58200CA1E97 /* AvailabiltyServiceChart.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +305,8 @@
 				05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */,
 				05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */,
 				056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */,
+				05C9663D2898D1AD00CA1E97 /* HomeBasicService.swift in Sources */,
+				05C9663F2898D58200CA1E97 /* AvailabiltyServiceChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
