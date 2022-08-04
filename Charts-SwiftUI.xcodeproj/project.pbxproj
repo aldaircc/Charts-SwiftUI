@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053C530A289B534F00ADF315 /* AccessIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C5309289B534F00ADF315 /* AccessIT.swift */; };
 		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
 		056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CD286AB09E00D17994 /* NatalityRate.swift */; };
 		05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053C5309289B534F00ADF315 /* AccessIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessIT.swift; sourceTree = "<group>"; };
 		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
 		056BE3CD286AB09E00D17994 /* NatalityRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRate.swift; sourceTree = "<group>"; };
 		05ACB4762861521B00E9B330 /* Charts-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 				05E489E62868110D00E9D028 /* GrowingRate.swift */,
 				056BE3CD286AB09E00D17994 /* NatalityRate.swift */,
 				05C9663C2898D1AD00CA1E97 /* HomeBasicService.swift */,
+				053C5309289B534F00ADF315 /* AccessIT.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */,
 				05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */,
 				05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */,
+				053C530A289B534F00ADF315 /* AccessIT.swift in Sources */,
 				056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */,
 				05C9663D2898D1AD00CA1E97 /* HomeBasicService.swift in Sources */,
 				05C9663F2898D58200CA1E97 /* AvailabiltyServiceChart.swift in Sources */,
