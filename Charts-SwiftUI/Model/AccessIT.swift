@@ -7,6 +7,15 @@
 
 import Foundation
 
-struct AccessIT {
-    
+enum HomeService: String {
+case withInternet
+    case withoutInternet
+    case withTvwire
+    case withoutTvWire
+}
+
+struct AccessIT: Identifiable {
+    let id = UUID()
+    let service: HomeService
+    let percentage: Double
 }
