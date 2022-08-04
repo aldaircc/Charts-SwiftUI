@@ -10,7 +10,7 @@ import Foundation
 enum HomeService: String {
 case withInternet
     case withoutInternet
-    case withTvwire
+    case withTvWire
     case withoutTvWire
 }
 
@@ -19,3 +19,10 @@ struct AccessIT: Identifiable {
     let service: HomeService
     let percentage: Double
 }
+
+let accessItData: [AccessIT] = [
+    AccessIT(service: .withInternet, percentage: 33.7),
+    AccessIT(service: .withoutInternet, percentage: 66.3),
+    AccessIT(service: .withTvWire, percentage: 38.9),
+    AccessIT(service: .withoutTvWire, percentage: 61.1)
+]
