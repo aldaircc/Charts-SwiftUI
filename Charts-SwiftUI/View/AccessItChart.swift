@@ -46,7 +46,7 @@ struct AccessItChart: View {
             .padding(15)
             .background {
                 RoundedRectangle(cornerRadius: 9)
-                    .stroke(lineWidth: 1)
+                    .stroke(lineWidth: 2)
                     .fill(.orange)
                     .padding(5)
             }
