@@ -13,7 +13,7 @@ struct Charts_SwiftUIApp: App {
         WindowGroup {
             //DensityPopulationChart()
             //GrowingRateChart()
-            AvailabiltyServiceChart()
+            AccessItChart()
         }
     }
 }
