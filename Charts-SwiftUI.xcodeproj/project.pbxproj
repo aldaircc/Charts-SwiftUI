@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052066B7289E207000DE1A60 /* PbiRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052066B6289E207000DE1A60 /* PbiRate.swift */; };
 		053C530A289B534F00ADF315 /* AccessIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C5309289B534F00ADF315 /* AccessIT.swift */; };
 		053C530C289B557E00ADF315 /* AccessItChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C530B289B557E00ADF315 /* AccessItChart.swift */; };
 		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052066B6289E207000DE1A60 /* PbiRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PbiRate.swift; sourceTree = "<group>"; };
 		053C5309289B534F00ADF315 /* AccessIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessIT.swift; sourceTree = "<group>"; };
 		053C530B289B557E00ADF315 /* AccessItChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessItChart.swift; sourceTree = "<group>"; };
 		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				056BE3CD286AB09E00D17994 /* NatalityRate.swift */,
 				05C9663C2898D1AD00CA1E97 /* HomeBasicService.swift */,
 				053C5309289B534F00ADF315 /* AccessIT.swift */,
+				052066B6289E207000DE1A60 /* PbiRate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05ACB4A82861580600E9B330 /* DensityPopulationChart.swift in Sources */,
+				052066B7289E207000DE1A60 /* PbiRate.swift in Sources */,
 				05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */,
 				05E489E5286810DB00E9D028 /* GrowingRateChart.swift in Sources */,
 				053C530C289B557E00ADF315 /* AccessItChart.swift in Sources */,
