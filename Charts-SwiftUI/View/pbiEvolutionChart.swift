@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import Charts
 
 struct pbiEvolutionChart: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 10) {
+            Text("Perú: Evolución del producto bruto interno:\n2001 - 2020\nVariación porcentual respecto al año anterior")
+                .multilineTextAlignment(.center)
+            
+            Chart(pbiData) { obj in
+                BarMark(x: .value("", obj.year),
+                        y: .value("Percentage", obj.percentage))
+            }
+        }
     }
 }
 
