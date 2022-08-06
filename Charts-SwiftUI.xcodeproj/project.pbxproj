@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		052066B7289E207000DE1A60 /* PbiRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052066B6289E207000DE1A60 /* PbiRate.swift */; };
+		052066B9289E226400DE1A60 /* pbiEvolutionChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052066B8289E226400DE1A60 /* pbiEvolutionChart.swift */; };
 		053C530A289B534F00ADF315 /* AccessIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C5309289B534F00ADF315 /* AccessIT.swift */; };
 		053C530C289B557E00ADF315 /* AccessItChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C530B289B557E00ADF315 /* AccessItChart.swift */; };
 		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		052066B6289E207000DE1A60 /* PbiRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PbiRate.swift; sourceTree = "<group>"; };
+		052066B8289E226400DE1A60 /* pbiEvolutionChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pbiEvolutionChart.swift; sourceTree = "<group>"; };
 		053C5309289B534F00ADF315 /* AccessIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessIT.swift; sourceTree = "<group>"; };
 		053C530B289B557E00ADF315 /* AccessItChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessItChart.swift; sourceTree = "<group>"; };
 		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				056BE3CB286AB04500D17994 /* NatalityRateChart.swift */,
 				05C9663E2898D58200CA1E97 /* AvailabiltyServiceChart.swift */,
 				053C530B289B557E00ADF315 /* AccessItChart.swift */,
+				052066B8289E226400DE1A60 /* pbiEvolutionChart.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052066B9289E226400DE1A60 /* pbiEvolutionChart.swift in Sources */,
 				05ACB4A82861580600E9B330 /* DensityPopulationChart.swift in Sources */,
 				052066B7289E207000DE1A60 /* PbiRate.swift in Sources */,
 				05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */,
