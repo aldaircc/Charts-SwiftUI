@@ -15,8 +15,18 @@ struct pbiEvolutionChart: View {
                 .multilineTextAlignment(.center)
             
             Chart(pbiData) { obj in
-                BarMark(x: .value("", obj.year),
-                        y: .value("Percentage", obj.percentage))
+                BarMark(x: .value("Year", "\(obj.year)"),
+                        y: .value("Percentage",obj.percentage))
+            }
+            .chartXAxis {
+                AxisMarks { value in
+                    AxisGridLine()
+                    AxisTick()
+                    AxisValueLabel {
+                        let year = pbiData[value.index]
+                        Text("year: \(year.year)")
+                    }
+                }
             }
         }
     }
