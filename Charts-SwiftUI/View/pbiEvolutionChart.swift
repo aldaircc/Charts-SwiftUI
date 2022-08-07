@@ -9,6 +9,9 @@ import SwiftUI
 import Charts
 
 struct pbiEvolutionChart: View {
+    private let maxPercent = Int(pbiData.max { $1.percentage > $0.percentage }?.percentage ?? 0)
+    private let minPercent = Int(pbiData.min { $0.percentage < $1.percentage }?.percentage ?? 0)
+    
     var body: some View {
         VStack(spacing: 10) {
             Text("Perú: Evolución del producto bruto interno:\n2001 - 2020\nVariación porcentual respecto al año anterior")
@@ -31,11 +34,9 @@ struct pbiEvolutionChart: View {
                 }
             }
             .chartYAxis {
-                let ranges = -15...15
-                let array = ranges.map { Int($0) }
-                let array2 = ranges.filter { $0 % 5 == 0 }.map { Int($0) }
+                let array = (minPercent...maxPercent).filter { $0 % 5 == 0 }.map { Int($0) }
                 
-                AxisMarks(values: array2) { value in
+                AxisMarks(values: array) { value in
                     AxisGridLine()
                     AxisTick()
                     AxisValueLabel {
