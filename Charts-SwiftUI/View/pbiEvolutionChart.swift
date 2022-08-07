@@ -23,8 +23,24 @@ struct pbiEvolutionChart: View {
                     AxisGridLine()
                     AxisTick()
                     AxisValueLabel {
-                        let year = pbiData[value.index]
-                        Text("year: \(year.year)")
+                        let year = pbiData[value.index].year
+                        Text(verbatim: "\(year)")
+                            .frame(minWidth: 50)
+                            .rotationEffect(Angle(degrees: 90))
+                    }
+                }
+            }
+            .chartYAxis {
+                let ranges = -15...15
+                let array = ranges.map { Int($0) }
+                let array2 = ranges.filter { $0 % 5 == 0 }.map { Int($0) }
+                
+                AxisMarks(values: array2) { value in
+                    AxisGridLine()
+                    AxisTick()
+                    AxisValueLabel {
+                        let currentValue = value.as(Int.self)
+                        Text("\(currentValue ?? -1)")
                     }
                 }
             }

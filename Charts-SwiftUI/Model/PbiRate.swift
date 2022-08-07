@@ -23,16 +23,15 @@ let pbiData: [PbiRate] = [
     PbiRate(year: 2007, percentage: 8.5),
     PbiRate(year: 2008, percentage: 9.1),
     PbiRate(year: 2009, percentage: 1.1),
-    PbiRate(year: 2010, percentage: 8.3)
-//    ,
-//    PbiRate(year: 2011, percentage: 6.3),
-//    PbiRate(year: 2012, percentage: 6.1),
-//    PbiRate(year: 2013, percentage: 5.9),
-//    PbiRate(year: 2014, percentage: 2.4),
-//    PbiRate(year: 2015, percentage: 3.3),
-//    PbiRate(year: 2016, percentage: 4.0),
-//    PbiRate(year: 2017, percentage: 2.5),
-//    PbiRate(year: 2018, percentage: 4.0),
-//    PbiRate(year: 2019, percentage: 2.2),
-//    PbiRate(year: 2020, percentage: -13.10)
+    PbiRate(year: 2010, percentage: 8.3),
+    PbiRate(year: 2011, percentage: 6.3),
+    PbiRate(year: 2012, percentage: 6.1),
+    PbiRate(year: 2013, percentage: 5.9),
+    PbiRate(year: 2014, percentage: 2.4),
+    PbiRate(year: 2015, percentage: 3.3),
+    PbiRate(year: 2016, percentage: 4.0),
+    PbiRate(year: 2017, percentage: 2.5),
+    PbiRate(year: 2018, percentage: 4.0),
+    PbiRate(year: 2019, percentage: 2.2),
+    PbiRate(year: 2020, percentage: -13.10)
 ]
