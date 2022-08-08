@@ -16,6 +16,8 @@ struct pbiEvolutionChart: View {
         VStack(spacing: 10) {
             Text("Perú: Evolución del producto bruto interno:\n2001 - 2020\nVariación porcentual respecto al año anterior")
                 .multilineTextAlignment(.center)
+                .fontWeight(.semibold)
+                .foregroundColor(.blue)
             
             Chart(pbiData) { obj in
                 BarMark(x: .value("Year", "\(obj.year)"),
@@ -49,7 +51,7 @@ struct pbiEvolutionChart: View {
             .overlay {
                 RoundedRectangle(cornerSize: 9)
                     .stroke(lineWidth: 1)
-//                    .fill(.orange)
+                    .fill(.orange)
             }
         }
     }
