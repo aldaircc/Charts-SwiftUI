@@ -11,6 +11,10 @@ import Charts
 struct pbiEvolutionChart: View {
     private let maxPercent = Int(pbiData.max { $1.percentage > $0.percentage }?.percentage ?? 0)
     private let minPercent = Int(pbiData.min { $0.percentage < $1.percentage }?.percentage ?? 0)
+    var percentRange: [Int] {
+        let x = (minPercent...maxPercent).filter { $0 % 5 == 0 }.map { Int($0) }
+        return x
+    }
     
     var body: some View {
         VStack(spacing: 10) {
@@ -36,9 +40,7 @@ struct pbiEvolutionChart: View {
                 }
             }
             .chartYAxis {
-                let array = (minPercent...maxPercent).filter { $0 % 5 == 0 }.map { Int($0) }
-                
-                AxisMarks(values: array) { value in
+                AxisMarks(values: percentRange) { value in
                     AxisGridLine()
                     AxisTick()
                     AxisValueLabel {
@@ -46,12 +48,6 @@ struct pbiEvolutionChart: View {
                         Text("\(currentValue ?? -1)")
                     }
                 }
-            }
-            .padding(10)
-            .overlay {
-                RoundedRectangle(cornerSize: 9)
-                    .stroke(lineWidth: 1)
-                    .fill(.orange)
             }
         }
     }
