@@ -9,10 +9,11 @@ import SwiftUI
 import Charts
 
 struct pbiEvolutionChart: View {
-    private let maxPercent = Int(pbiData.max { $1.percentage > $0.percentage }?.percentage ?? 0)
-    private let minPercent = Int(pbiData.min { $0.percentage < $1.percentage }?.percentage ?? 0)
+    private let maxPercent = abs(Int(pbiData.max { $1.percentage > $0.percentage }?.percentage ?? 0))
+    private let minPercent = abs(Int(pbiData.min { $0.percentage < $1.percentage }?.percentage ?? 0))
     var percentRange: [Int] {
-        let x = (minPercent...maxPercent).filter { $0 % 5 == 0 }.map { Int($0) }
+        let maxAbs = (maxPercent > minPercent ? maxPercent : minPercent) + 5
+        let x = (-maxAbs...maxAbs).filter { $0 % 5 == 0 }.map { Int($0) }
         return x
     }
     
