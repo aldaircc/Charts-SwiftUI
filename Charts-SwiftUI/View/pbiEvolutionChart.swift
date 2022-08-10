@@ -30,19 +30,27 @@ struct pbiEvolutionChart: View {
                 .annotation(
                     position: (obj.percentage >= 0 ? .top : .bottom),
                     alignment: .center,
-                    spacing: 10) {
+                    spacing: 5) {
                         Text(verbatim: "\(obj.percentage)")
+                            .font(.system(size: 10))
                     }
             }
+            .padding()
             .chartXAxis {
                 AxisMarks { value in
                     AxisGridLine()
                     AxisTick()
-                    AxisValueLabel {
+                    AxisValueLabel(
+                        centered: true,
+                        anchor: .top,
+                        multiLabelAlignment: .center,
+                        collisionResolution: .automatic,
+                        orientation: .vertical,
+                        verticalSpacing: 18) {
                         let year = pbiData[value.index].year
                         Text(verbatim: "\(year)")
                             .frame(minWidth: 50)
-                            .rotationEffect(Angle(degrees: 90))
+                            .rotationEffect(Angle(degrees: -90))
                     }
                 }
             }
