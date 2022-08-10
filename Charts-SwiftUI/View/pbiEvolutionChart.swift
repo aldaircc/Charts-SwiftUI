@@ -27,6 +27,12 @@ struct pbiEvolutionChart: View {
             Chart(pbiData) { obj in
                 BarMark(x: .value("Year", "\(obj.year)"),
                         y: .value("Percentage",obj.percentage))
+                .annotation(
+                    position: (obj.percentage >= 0 ? .top : .bottom),
+                    alignment: .center,
+                    spacing: 10) {
+                        Text(verbatim: "\(obj.percentage)")
+                    }
             }
             .chartXAxis {
                 AxisMarks { value in
