@@ -64,6 +64,12 @@ struct pbiEvolutionChart: View {
                     }
                 }
             }
+            .background {
+                RoundedRectangle(cornerRadius: 9)
+                    .stroke(lineWidth: 1)
+                    .foregroundColor(.orange)
+                    .padding(5)
+            }
         }
     }
 }
