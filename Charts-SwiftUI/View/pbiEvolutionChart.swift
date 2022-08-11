@@ -27,6 +27,7 @@ struct pbiEvolutionChart: View {
             Chart(pbiData) { obj in
                 BarMark(x: .value("Year", "\(obj.year)"),
                         y: .value("Percentage",obj.percentage))
+                .foregroundStyle(obj.percentage < 0 ? Color.green : Color.orange)
                 .annotation(
                     position: (obj.percentage >= 0 ? .top : .bottom),
                     alignment: .center,
