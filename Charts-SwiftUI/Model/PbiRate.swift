@@ -6,11 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct PbiRate: Identifiable {
     var id = UUID()
     let year: Int
     let percentage: Double
+    var bgColor: Color {
+        return percentage >= 0 ? Color.green : Color.orange
+    }
 }
 
 let pbiData: [PbiRate] = [
