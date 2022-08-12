@@ -35,6 +35,7 @@ struct pbiEvolutionChart: View {
                         Text(verbatim: "\(obj.percentage)")
                             .font(.system(size: 10))
                             .foregroundColor(obj.percentage >= 0 ? Color.black : Color.red)
+                            .fontWeight(obj.percentage >= 0 ? nil : .bold)
                     }
             }
             .padding()
