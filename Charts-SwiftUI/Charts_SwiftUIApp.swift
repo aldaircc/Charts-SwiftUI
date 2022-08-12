@@ -13,7 +13,8 @@ struct Charts_SwiftUIApp: App {
         WindowGroup {
             //DensityPopulationChart()
             //GrowingRateChart()
-            AccessItChart()
+            //AccessItChart()
+            pbiEvolutionChart()
         }
     }
 }
