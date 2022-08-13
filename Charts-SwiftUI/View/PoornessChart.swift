@@ -6,10 +6,21 @@
 //
 
 import SwiftUI
+import Charts
 
 struct PoornessChart: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Incidencia de la pobreza por grupos de edad, 2019")
+            
+            Chart(poornessData, id: \.self) { obj in
+                let value = obj.getAgeData()
+                BarMark(
+                    x: .value("Ranges", value.0),
+                    y: .value("Rate", value.1))
+            }
+            
+        }
     }
 }
 
