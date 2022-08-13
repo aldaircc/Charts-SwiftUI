@@ -8,23 +8,23 @@
 import Foundation
 
 enum AgeRange: Hashable {
-    case _0To4(Int)
-    case _5To9(Int)
-    case _10To14(Int)
-    case _15To19(Int)
-    case _20To24(Int)
-    case _25To29(Int)
-    case _30To34(Int)
-    case _35To39(Int)
-    case _40To44(Int)
-    case _45To49(Int)
-    case _50To54(Int)
-    case _55To59(Int)
-    case _60To64(Int)
-    case _65To69(Int)
-    case _70ToMore(Int)
+    case _0To4(Double)
+    case _5To9(Double)
+    case _10To14(Double)
+    case _15To19(Double)
+    case _20To24(Double)
+    case _25To29(Double)
+    case _30To34(Double)
+    case _35To39(Double)
+    case _40To44(Double)
+    case _45To49(Double)
+    case _50To54(Double)
+    case _55To59(Double)
+    case _60To64(Double)
+    case _65To69(Double)
+    case _70ToMore(Double)
     
-    func getAgeData() -> (String, Int) {
+    func getAgeData() -> (String, Double) {
         switch self {
         case ._0To4(let value):
             return ("0 a 4", value)
@@ -62,18 +62,18 @@ enum AgeRange: Hashable {
 
 let poornessData: [AgeRange] = [
     AgeRange._0To4(31),
-    AgeRange._5To9(1),
-    AgeRange._10To14(1),
-    AgeRange._15To19(1),
-    AgeRange._20To24(1),
-    AgeRange._25To29(1),
-    AgeRange._30To34(1),
-    AgeRange._35To39(1),
-    AgeRange._40To44(1),
-    AgeRange._45To49(1),
-    AgeRange._50To54(1),
-    AgeRange._55To59(1),
-    AgeRange._60To64(1),
-    AgeRange._65To69(1),
-    AgeRange._70ToMore(1)
+    AgeRange._5To9(28.5),
+    AgeRange._10To14(28),
+    AgeRange._15To19(22.3),
+    AgeRange._20To24(16.4),
+    AgeRange._25To29(16.4),
+    AgeRange._30To34(21.2),
+    AgeRange._35To39(20.5),
+    AgeRange._40To44(18.3),
+    AgeRange._45To49(16),
+    AgeRange._50To54(14),
+    AgeRange._55To59(13.3),
+    AgeRange._60To64(13.2),
+    AgeRange._65To69(14.3),
+    AgeRange._70ToMore(16.2)
 ]

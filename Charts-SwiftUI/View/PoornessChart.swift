@@ -13,11 +13,14 @@ struct PoornessChart: View {
         VStack {
             Text("Incidencia de la pobreza por grupos de edad, 2019")
             
-            Chart(poornessData, id: \.self) { obj in
-                let value = obj.getAgeData()
-                BarMark(
-                    x: .value("Ranges", value.0),
-                    y: .value("Rate", value.1))
+            Chart {
+                ForEach(poornessData, id: \.self) {  obj in
+                    let value = obj.getAgeData()
+                    BarMark(
+                        x: .value("Ranges", value.0),
+                        y: .value("Rate", value.1))
+                }
+                
             }
             
         }
