@@ -21,7 +21,14 @@ struct PoornessChart: View {
                         y: .value("Rate", value.1))
                 }
                 RuleMark(y: .value("Average", 15))
-                    .foregroundStyle(.red)
+                    .foregroundStyle(.black)
+                    .lineStyle(.init(
+                        lineWidth: 0.5,
+                        lineCap: CGLineCap.round,
+                        lineJoin: CGLineJoin.round,
+                        miterLimit: 0,
+                        dash: [10],
+                        dashPhase: 1) )
             }
             
         }
