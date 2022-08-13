@@ -61,19 +61,19 @@ enum AgeRange: Hashable {
 }
 
 let poornessData: [AgeRange] = [
-    AgeRange._0To4(31), //.getAgeData(),
-    AgeRange._5To9(1), //.getAgeData(),
-    AgeRange._10To14(1), //.getAgeData(),
-    AgeRange._15To19(1), //.getAgeData(),
-    AgeRange._20To24(1), //.getAgeData(),
-    AgeRange._25To29(1), //.getAgeData(),
-    AgeRange._30To34(1), //.getAgeData(),
-    AgeRange._35To39(1), //.getAgeData(),
-    AgeRange._40To44(1), //.getAgeData(),
-    AgeRange._45To49(1), //.getAgeData(),
-    AgeRange._50To54(1), //.getAgeData(),
-    AgeRange._55To59(1), //.getAgeData(),
-    AgeRange._60To64(1), //.getAgeData(),
-    AgeRange._65To69(1), //.getAgeData(),
-    AgeRange._70ToMore(1) //.getAgeData()
+    AgeRange._0To4(31),
+    AgeRange._5To9(1),
+    AgeRange._10To14(1),
+    AgeRange._15To19(1),
+    AgeRange._20To24(1),
+    AgeRange._25To29(1),
+    AgeRange._30To34(1),
+    AgeRange._35To39(1),
+    AgeRange._40To44(1),
+    AgeRange._45To49(1),
+    AgeRange._50To54(1),
+    AgeRange._55To59(1),
+    AgeRange._60To64(1),
+    AgeRange._65To69(1),
+    AgeRange._70ToMore(1)
 ]
