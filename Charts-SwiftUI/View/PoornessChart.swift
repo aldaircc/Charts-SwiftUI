@@ -20,7 +20,8 @@ struct PoornessChart: View {
                         x: .value("Ranges", value.0),
                         y: .value("Rate", value.1))
                 }
-                
+                RuleMark(y: .value("Average", 15))
+                    .foregroundStyle(.red)
             }
             
         }
