@@ -9,6 +9,10 @@ import SwiftUI
 import Charts
 
 struct PoornessChart: View {
+    let average = poornessData
+        .map { $0.getAgeData().1 }
+        .reduce(0) { $0 + Int($1) } / poornessData.count
+    
     var body: some View {
         VStack {
             Text("Incidencia de la pobreza por grupos de edad, 2019")
@@ -20,15 +24,16 @@ struct PoornessChart: View {
                         x: .value("Ranges", value.0),
                         y: .value("Rate", value.1))
                 }
-                RuleMark(y: .value("Average", 15))
+                
+                RuleMark(y: .value("Average", average))
                     .foregroundStyle(.black)
                     .lineStyle(.init(
-                        lineWidth: 0.5,
+                        lineWidth: 1,
                         lineCap: CGLineCap.round,
                         lineJoin: CGLineJoin.round,
                         miterLimit: 0,
-                        dash: [10],
-                        dashPhase: 1) )
+                        dash: [5],
+                        dashPhase: 5) )
             }
             
         }
