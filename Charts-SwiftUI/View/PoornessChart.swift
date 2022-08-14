@@ -23,6 +23,9 @@ struct PoornessChart: View {
                     BarMark(
                         x: .value("Ranges", value.0),
                         y: .value("Rate", value.1))
+                    .annotation {
+                        Text(verbatim: "\(value.1)")
+                    }
                 }
                 
                 RuleMark(y: .value("Average", average))
@@ -34,6 +37,26 @@ struct PoornessChart: View {
                         miterLimit: 0,
                         dash: [5],
                         dashPhase: 5) )
+            }
+            .chartXAxis {
+                AxisMarks { value in
+                    AxisTick()
+                    AxisValueLabel(centered: true,
+                                   anchor: .center,
+                                   multiLabelAlignment: .trailing,
+                                   collisionResolution: .automatic,
+                                   offsetsMarks: true,
+                                   orientation: .horizontal,
+                                   horizontalSpacing: 5,
+                                   verticalSpacing: 15) {
+                        let x = poornessData[value.index].getAgeData().0
+                        Text(x)
+                            .multilineTextAlignment(.trailing)
+                            .frame(minWidth: 90, idealHeight: 50)
+                            .background(.red)
+                            .rotationEffect(Angle(degrees: 90))
+                    }
+                }
             }
             
         }
