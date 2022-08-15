@@ -26,6 +26,7 @@ struct PoornessChart: View {
                         y: .value("Rate", value.1))
                     .annotation {
                         Text(verbatim: "\(value.1)")
+                            .font(.system(size: 9, weight: .bold))
                     }
                 }
                 
