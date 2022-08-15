@@ -16,6 +16,7 @@ struct PoornessChart: View {
     var body: some View {
         VStack {
             Text("Incidencia de la pobreza por grupos de edad, 2019")
+                .foregroundColor(.blue.opacity(0.8))
             
             Chart {
                 ForEach(poornessData, id: \.self) {  obj in
@@ -58,7 +59,12 @@ struct PoornessChart: View {
                     }
                 }
             }
-            
+            .padding(8)
+            .overlay {
+                RoundedRectangle(cornerRadius: 9, style: .circular)
+                    .stroke(lineWidth: 1)
+                    .foregroundColor(.orange)
+            }
         }
     }
 }
