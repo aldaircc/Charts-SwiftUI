@@ -16,6 +16,8 @@ struct PoornessChart: View {
     var body: some View {
         VStack {
             Text("Incidencia de la pobreza por grupos de edad, 2019")
+                .multilineTextAlignment(.center)
+                .font(.system(size: 17, weight: .semibold))
                 .foregroundColor(.blue.opacity(0.8))
             
             Chart {
@@ -40,27 +42,25 @@ struct PoornessChart: View {
                         dash: [5],
                         dashPhase: 5) )
             }
+            .padding(8)
             .chartXAxis {
                 AxisMarks { value in
                     AxisTick()
                     AxisValueLabel(centered: true,
                                    anchor: .center,
-                                   multiLabelAlignment: .trailing,
+                                   multiLabelAlignment: .bottomLeading,
                                    collisionResolution: .automatic,
                                    offsetsMarks: true,
-                                   orientation: .horizontal,
+                                   orientation: .vertical,
                                    horizontalSpacing: 5,
                                    verticalSpacing: 15) {
                         let x = poornessData[value.index].getAgeData().0
                         Text(x)
-                            .multilineTextAlignment(.trailing)
-                            .frame(minWidth: 90, idealHeight: 50)
-                            .background(.red)
-                            .rotationEffect(Angle(degrees: 90))
+                        .frame(minWidth: 90, minHeight: 25)
+                    .rotationEffect(Angle(degrees: 90))
                     }
                 }
             }
-            .padding(8)
             .overlay {
                 RoundedRectangle(cornerRadius: 9, style: .circular)
                     .stroke(lineWidth: 1)
