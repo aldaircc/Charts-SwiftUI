@@ -13,6 +13,8 @@
 		053C530C289B557E00ADF315 /* AccessItChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C530B289B557E00ADF315 /* AccessItChart.swift */; };
 		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
 		056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CD286AB09E00D17994 /* NatalityRate.swift */; };
+		0579935B28A72E8F0047061F /* PoornessRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579935A28A72E8F0047061F /* PoornessRate.swift */; };
+		0579935D28A72EB20047061F /* PoornessChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579935C28A72EB20047061F /* PoornessChart.swift */; };
 		05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */; };
 		05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB47B2861521B00E9B330 /* ContentView.swift */; };
 		05ACB47E2861521C00E9B330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05ACB47D2861521C00E9B330 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		053C530B289B557E00ADF315 /* AccessItChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessItChart.swift; sourceTree = "<group>"; };
 		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
 		056BE3CD286AB09E00D17994 /* NatalityRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRate.swift; sourceTree = "<group>"; };
+		0579935A28A72E8F0047061F /* PoornessRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoornessRate.swift; sourceTree = "<group>"; };
+		0579935C28A72EB20047061F /* PoornessChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoornessChart.swift; sourceTree = "<group>"; };
 		05ACB4762861521B00E9B330 /* Charts-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_SwiftUIApp.swift; sourceTree = "<group>"; };
 		05ACB47B2861521B00E9B330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				05C9663C2898D1AD00CA1E97 /* HomeBasicService.swift */,
 				053C5309289B534F00ADF315 /* AccessIT.swift */,
 				052066B6289E207000DE1A60 /* PbiRate.swift */,
+				0579935A28A72E8F0047061F /* PoornessRate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				05C9663E2898D58200CA1E97 /* AvailabiltyServiceChart.swift */,
 				053C530B289B557E00ADF315 /* AccessItChart.swift */,
 				052066B8289E226400DE1A60 /* pbiEvolutionChart.swift */,
+				0579935C28A72EB20047061F /* PoornessChart.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,10 +319,12 @@
 				05ACB4A82861580600E9B330 /* DensityPopulationChart.swift in Sources */,
 				052066B7289E207000DE1A60 /* PbiRate.swift in Sources */,
 				05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */,
+				0579935B28A72E8F0047061F /* PoornessRate.swift in Sources */,
 				05E489E5286810DB00E9D028 /* GrowingRateChart.swift in Sources */,
 				053C530C289B557E00ADF315 /* AccessItChart.swift in Sources */,
 				05ACB4A52861537A00E9B330 /* CountryPopulation.swift in Sources */,
 				056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */,
+				0579935D28A72EB20047061F /* PoornessChart.swift in Sources */,
 				05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */,
 				05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */,
 				053C530A289B534F00ADF315 /* AccessIT.swift in Sources */,
