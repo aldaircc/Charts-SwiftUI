@@ -14,7 +14,7 @@ struct Charts_SwiftUIApp: App {
             //DensityPopulationChart()
             //GrowingRateChart()
             //AccessItChart()
-            pbiEvolutionChart()
+            PoornessChart()
         }
     }
 }
