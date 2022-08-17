@@ -64,7 +64,7 @@ struct HomeAdultRate: Identifiable {
     let ambitGeograph: AmbitGeographic
 }
 
-let homeAdultRate: [HomeAdultRate] = [
+let homeAdultData: [HomeAdultRate] = [
     HomeAdultRate(rate: 19.6, home: .unipersonal, ambitGeograph: .national),
     HomeAdultRate(rate: 42, home: .nuclear, ambitGeograph: .national),
     HomeAdultRate(rate: 29.5, home: .extended, ambitGeograph: .national),
