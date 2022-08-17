@@ -39,3 +39,34 @@ enum AmbitGeographic: String {
         }
     }
 }
+
+enum HomeType: String {
+    case unipersonal
+    case nuclear
+    case extended
+    case others
+    
+    init?(rawValue: String) {
+        switch rawValue.lowercased() {
+        case "unipersonal": self = .unipersonal
+        case "nuclear": self = .nuclear
+        case "extended": self = .extended
+        case "others": self = .others
+        default: return nil
+        }
+    }
+}
+
+struct HomeAdultRate: Identifiable {
+    let id = UUID()
+    let rate: Double
+    let home: HomeType
+    let ambitGeograph: AmbitGeographic
+}
+
+let homeAdultRate: [HomeAdultRate] = [
+    HomeAdultRate(rate: 19.6, home: .unipersonal, ambitGeograph: .national),
+    HomeAdultRate(rate: 42, home: .nuclear, ambitGeograph: .national),
+    HomeAdultRate(rate: 29.5, home: .extended, ambitGeograph: .national),
+    HomeAdultRate(rate: 8.9, home: .others, ambitGeograph: .national)
+]
