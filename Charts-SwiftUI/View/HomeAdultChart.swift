@@ -16,8 +16,8 @@ struct HomeAdultChart: View {
             Chart(homeAdultData) { obj in
                 BarMark(
                     x: .value("rate", obj.rate),
-                    y: .value("ambit", obj.ambitGeograph.rawValue))
-                .foregroundStyle(by: .value("home", obj.home.rawValue))
+                    y: .value("ambit", obj.ambitGeograph.description))
+                .foregroundStyle(by: .value("home", obj.home.description))
             }
         }
     }

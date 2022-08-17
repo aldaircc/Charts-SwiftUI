@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AmbitGeographic: String {
+enum AmbitGeographic: String, CustomStringConvertible {
     case national
     case limaMetropolitan
     case urbanRest
@@ -20,6 +20,35 @@ enum AmbitGeographic: String {
     case andeanCentre
     case andeanSouth
     case jungle
+    
+    var description: String {
+        switch self {
+        case .national:
+            return "Nacional"
+        case .limaMetropolitan:
+            return "Lima Metropolitana"
+        case .urbanRest:
+            return "Resto urbano"
+        case .ruralArea:
+            return "Área rural"
+        case .naturalRegion:
+            return "Región Natural"
+        case .coastNorth:
+            return "Costa Norte"
+        case .coastCentre:
+            return "Costa Centro"
+        case .coastSouth:
+            return "Costa Sur"
+        case .andeanNorth:
+            return "Sierra Norte"
+        case .andeanCentre:
+            return "Sierra Centro"
+        case .andeanSouth:
+            return "Sierra Sur"
+        case .jungle:
+            return "Selva"
+        }
+    }
     
     init?(rawValue: String) {
         switch rawValue.lowercased() {
@@ -46,16 +75,6 @@ enum HomeType: String, CustomStringConvertible {
     case extended
     case others
     
-    init?(rawValue: String) {
-        switch rawValue.lowercased() {
-        case "unipersonal": self = .unipersonal
-        case "nuclear": self = .nuclear
-        case "extended": self = .extended
-        case "others": self = .others
-        default: return nil
-        }
-    }
-    
     var description: String {
         switch self {
         case .unipersonal:
@@ -66,6 +85,16 @@ enum HomeType: String, CustomStringConvertible {
             return "Extendido"
         case .others:
             return "Otros 1/"
+        }
+    }
+    
+    init?(rawValue: String) {
+        switch rawValue.lowercased() {
+        case "unipersonal": self = .unipersonal
+        case "nuclear": self = .nuclear
+        case "extended": self = .extended
+        case "others": self = .others
+        default: return nil
         }
     }
 }
