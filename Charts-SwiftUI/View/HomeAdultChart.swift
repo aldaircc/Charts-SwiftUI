@@ -17,6 +17,15 @@ struct HomeAdultChart: View {
                 BarMark(
                     x: .value("rate", obj.rate),
                     y: .value("ambit", obj.ambitGeograph.description))
+                .annotation(position: .overlay,
+                            alignment: .center,
+                            spacing: 0,
+                            content: {
+                    Text(verbatim: "\(obj.rate)")
+                        .font(.system(size: 11))
+                        .fontWeight(.regular)
+                        .foregroundColor(.white)
+                })
                 .foregroundStyle(by: .value("home", obj.home.description))
             }
         }
