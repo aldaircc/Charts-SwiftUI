@@ -42,6 +42,13 @@ struct HomeAdultChart: View {
                     }
                 }
             }
+            .padding(10)
+            .overlay {
+                RoundedRectangle(cornerRadius: 9)
+                    .stroke(lineWidth: 1)
+                    .fill(.red)
+            }
+            .padding(3)
         }
     }
 }
