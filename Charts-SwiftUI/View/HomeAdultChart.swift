@@ -46,7 +46,7 @@ struct HomeAdultChart: View {
             .overlay {
                 RoundedRectangle(cornerRadius: 9)
                     .stroke(lineWidth: 1)
-                    .fill(.red)
+                    .fill(.orange)
             }
             .padding(3)
         }
