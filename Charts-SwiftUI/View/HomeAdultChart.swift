@@ -12,6 +12,9 @@ struct HomeAdultChart: View {
     var body: some View {
         VStack() {
             Text("Hogares con al menos un adulto mayor por tipo de hogar, según ámbito geográfico, 2019")
+                .multilineTextAlignment(.center)
+                .foregroundColor(.blue)
+                .fontWeight(.semibold)
             
             Chart(homeAdultData) { obj in
                 BarMark(
