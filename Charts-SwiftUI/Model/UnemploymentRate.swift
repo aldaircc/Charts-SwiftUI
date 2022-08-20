@@ -25,4 +25,19 @@ struct UnemploymentRate: Identifiable {
     let measureData: [AgeMeasure]
     let femaleAverage: Double
     let maleAverage: Double
+    
+    public static let data: [UnemploymentRate] = [
+        UnemploymentRate(measureData: [AgeMeasure._14To29(11.7, .female),
+                                       AgeMeasure._14To29(9.7, .male),
+                                       AgeMeasure._30To49(3.4, .female),
+                                       AgeMeasure._30To49(1.9, .male),
+                                       AgeMeasure._50To59(1.9, .female),
+                                       AgeMeasure._50To59(1.9, .male),
+                                       AgeMeasure._60To69(1.7, .female),
+                                       AgeMeasure._60To69(2.6, .male),
+                                       AgeMeasure._70ToMore(1.1, .female),
+                                       AgeMeasure._70ToMore(3.3, .male)],
+                         femaleAverage: 5.1,
+                         maleAverage: 4.2)
+    ]
 }
