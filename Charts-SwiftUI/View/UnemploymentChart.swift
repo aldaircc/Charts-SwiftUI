@@ -9,11 +9,13 @@ import SwiftUI
 
 struct UnemploymentChart: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text("Tasa de desempleo en el área urbana por grupos de edad, según sexo, 2019 (Porcentaje)")
                 .multilineTextAlignment(.center)
                 .foregroundColor(.blue)
                 .fontWeight(.semibold)
+        
+            
         }
     }
 }
