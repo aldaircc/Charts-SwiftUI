@@ -13,6 +13,8 @@
 		0534A65128AC6F860048B9A6 /* HomeAdultChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534A65028AC6F860048B9A6 /* HomeAdultChart.swift */; };
 		053C530A289B534F00ADF315 /* AccessIT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C5309289B534F00ADF315 /* AccessIT.swift */; };
 		053C530C289B557E00ADF315 /* AccessItChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053C530B289B557E00ADF315 /* AccessItChart.swift */; };
+		054B914128B097F9006B78F1 /* UnemploymentRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B914028B097F9006B78F1 /* UnemploymentRate.swift */; };
+		054B914328B0980A006B78F1 /* UnemploymentChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B914228B0980A006B78F1 /* UnemploymentChart.swift */; };
 		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
 		056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CD286AB09E00D17994 /* NatalityRate.swift */; };
 		0579935B28A72E8F0047061F /* PoornessRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579935A28A72E8F0047061F /* PoornessRate.swift */; };
@@ -56,6 +58,8 @@
 		0534A65028AC6F860048B9A6 /* HomeAdultChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdultChart.swift; sourceTree = "<group>"; };
 		053C5309289B534F00ADF315 /* AccessIT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessIT.swift; sourceTree = "<group>"; };
 		053C530B289B557E00ADF315 /* AccessItChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessItChart.swift; sourceTree = "<group>"; };
+		054B914028B097F9006B78F1 /* UnemploymentRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnemploymentRate.swift; sourceTree = "<group>"; };
+		054B914228B0980A006B78F1 /* UnemploymentChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnemploymentChart.swift; sourceTree = "<group>"; };
 		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
 		056BE3CD286AB09E00D17994 /* NatalityRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRate.swift; sourceTree = "<group>"; };
 		0579935A28A72E8F0047061F /* PoornessRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoornessRate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				052066B6289E207000DE1A60 /* PbiRate.swift */,
 				0579935A28A72E8F0047061F /* PoornessRate.swift */,
 				05219D3F28AB483100E7995D /* HomeAdultRate.swift */,
+				054B914028B097F9006B78F1 /* UnemploymentRate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				052066B8289E226400DE1A60 /* pbiEvolutionChart.swift */,
 				0579935C28A72EB20047061F /* PoornessChart.swift */,
 				0534A65028AC6F860048B9A6 /* HomeAdultChart.swift */,
+				054B914228B0980A006B78F1 /* UnemploymentChart.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				052066B9289E226400DE1A60 /* pbiEvolutionChart.swift in Sources */,
+				054B914328B0980A006B78F1 /* UnemploymentChart.swift in Sources */,
 				05ACB4A82861580600E9B330 /* DensityPopulationChart.swift in Sources */,
 				052066B7289E207000DE1A60 /* PbiRate.swift in Sources */,
 				05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */,
@@ -334,6 +341,7 @@
 				056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */,
 				0579935D28A72EB20047061F /* PoornessChart.swift in Sources */,
 				05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */,
+				054B914128B097F9006B78F1 /* UnemploymentRate.swift in Sources */,
 				05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */,
 				053C530A289B534F00ADF315 /* AccessIT.swift in Sources */,
 				056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */,
