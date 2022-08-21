@@ -16,7 +16,12 @@ struct UnemploymentChart: View {
                 .foregroundColor(.blue)
                 .fontWeight(.semibold)
         
-            
+            Chart {
+//                ForEach(UnemploymentRate.data.measureData, id: \.self) { obj in
+//                    BarMark(x: .value("", obj.),
+//                            y: .value("", obj))
+//                }
+            }
         }
     }
 }

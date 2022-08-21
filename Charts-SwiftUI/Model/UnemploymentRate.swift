@@ -12,12 +12,43 @@ enum Gender {
     case female
 }
 
-enum AgeMeasure {
+enum AgeMeasure: Hashable, CustomStringConvertible {
+    
     case _14To29(Double, Gender)
     case _30To49(Double, Gender)
     case _50To59(Double, Gender)
     case _60To69(Double, Gender)
     case _70ToMore(Double, Gender)
+    
+    var description: String {
+        switch self {
+        case ._14To29(_, _):
+            return "De 14 a 29 años"
+        case ._30To49(_, _):
+            return "De 30 a 49 años"
+        case ._50To59(_, _):
+            return "De 50 a 59 años"
+        case ._60To69(_, _):
+            return "De 60 a 69 años"
+        case ._70ToMore(_, _):
+            return "De 70 a más años"
+        }
+    }
+    
+    func getValues() -> (Double, String) {
+        switch self {
+        case ._14To29(let rate, _):
+            return (rate, description)
+        case ._30To49(let rate, _):
+            return (rate, description)
+        case ._50To59(let rate, _):
+            return (rate, description)
+        case ._60To69(let rate, _):
+            return (rate, description)
+        case ._70ToMore(let rate, _):
+            return (rate, description)
+        }
+    }
 }
 
 struct UnemploymentRate: Identifiable {
