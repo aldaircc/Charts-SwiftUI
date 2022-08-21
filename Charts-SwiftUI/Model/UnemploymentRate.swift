@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Gender {
+enum Gender: String {
     case male
     case female
 }
@@ -37,16 +37,16 @@ enum AgeMeasure: Hashable, CustomStringConvertible {
     
     func getValues() -> (Double, String) {
         switch self {
-        case ._14To29(let rate, _):
-            return (rate, description)
-        case ._30To49(let rate, _):
-            return (rate, description)
-        case ._50To59(let rate, _):
-            return (rate, description)
-        case ._60To69(let rate, _):
-            return (rate, description)
-        case ._70ToMore(let rate, _):
-            return (rate, description)
+        case ._14To29(let rate, let gender):
+            return (rate, gender.rawValue)
+        case ._30To49(let rate, let gender):
+            return (rate, gender.rawValue)
+        case ._50To59(let rate, let gender):
+            return (rate, gender.rawValue)
+        case ._60To69(let rate, let gender):
+            return (rate, gender.rawValue)
+        case ._70ToMore(let rate, let gender):
+            return (rate, gender.rawValue)
         }
     }
 }

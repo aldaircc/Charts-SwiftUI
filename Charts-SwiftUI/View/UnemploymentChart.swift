@@ -19,7 +19,13 @@ struct UnemploymentChart: View {
             Chart {
                 ForEach(UnemploymentRate.data.measureData, id: \.self) { obj in
                     BarMark(x: .value("Description", obj.description),
-                            y: .value("Rate", obj.getValues().1))
+                            y: .value("Rate", obj.getValues().0))
+                    .foregroundStyle(by:
+                            .value("", obj.getValues().1))
+                    
+                    /*:
+                     .foregroundStyle(by: .value("Types", typeRate.type.rawValue))
+                     */
                 }
             }
         }
