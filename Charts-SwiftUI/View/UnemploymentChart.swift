@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct UnemploymentChart: View {
     var body: some View {

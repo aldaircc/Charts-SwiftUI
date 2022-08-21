@@ -26,7 +26,7 @@ struct UnemploymentRate: Identifiable {
     let femaleAverage: Double
     let maleAverage: Double
     
-    public static let data: [UnemploymentRate] = [
+    public static let data: UnemploymentRate =
         UnemploymentRate(measureData: [AgeMeasure._14To29(11.7, .female),
                                        AgeMeasure._14To29(9.7, .male),
                                        AgeMeasure._30To49(3.4, .female),
@@ -39,5 +39,4 @@ struct UnemploymentRate: Identifiable {
                                        AgeMeasure._70ToMore(3.3, .male)],
                          femaleAverage: 5.1,
                          maleAverage: 4.2)
-    ]
 }
