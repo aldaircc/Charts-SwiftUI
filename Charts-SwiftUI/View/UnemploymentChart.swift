@@ -17,10 +17,10 @@ struct UnemploymentChart: View {
                 .fontWeight(.semibold)
         
             Chart {
-//                ForEach(UnemploymentRate.data.measureData, id: \.self) { obj in
-//                    BarMark(x: .value("", obj.),
-//                            y: .value("", obj))
-//                }
+                ForEach(UnemploymentRate.data.measureData, id: \.self) { obj in
+                    BarMark(x: .value("Description", obj.description),
+                            y: .value("Rate", obj.getValues().1))
+                }
             }
         }
     }
