@@ -21,11 +21,7 @@ struct UnemploymentChart: View {
                     BarMark(x: .value("Description", obj.description),
                             y: .value("Rate", obj.getValues().0))
                     .foregroundStyle(by:
-                            .value("", obj.getValues().1))
-                    
-                    /*:
-                     .foregroundStyle(by: .value("Types", typeRate.type.rawValue))
-                     */
+                            .value("Gender", obj.getValues().1))
                 }
             }
             .padding(10)
