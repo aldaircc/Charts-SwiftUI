@@ -28,6 +28,12 @@ struct UnemploymentChart: View {
                      */
                 }
             }
+            .padding(10)
+            .overlay {
+                RoundedRectangle(cornerRadius: 9)
+                    .stroke(lineWidth: 1)
+                    .foregroundColor(.orange)
+            }
         }
     }
 }
