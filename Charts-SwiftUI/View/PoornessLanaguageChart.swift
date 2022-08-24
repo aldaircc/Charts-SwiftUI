@@ -15,6 +15,6 @@ struct PoornessLanaguageChart: View {
 
 struct PoornessLanaguageChrt_Previews: PreviewProvider {
     static var previews: some View {
-        PoornessLanaguageChrt()
+        PoornessLanaguageChart()
     }
 }

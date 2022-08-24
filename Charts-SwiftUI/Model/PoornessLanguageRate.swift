@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum Language {
+    case Spanish(rate: Double)
+    case Native(rate: Double)
+}
