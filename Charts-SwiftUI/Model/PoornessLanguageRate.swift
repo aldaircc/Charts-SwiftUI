@@ -11,3 +11,8 @@ enum Language {
     case Spanish(rate: Double)
     case Native(rate: Double)
 }
+
+struct LanguagePoornessRate {
+    let id = UUID()
+    let kind: Language
+}
