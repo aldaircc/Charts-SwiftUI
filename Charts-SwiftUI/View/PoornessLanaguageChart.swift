@@ -11,6 +11,8 @@ struct PoornessLanaguageChart: View {
     var body: some View {
         Text("Perú: Incidencia de la pobreza, según lengua materna, 2008 - 2019")
             .multilineTextAlignment(.center)
+            .foregroundColor(.blue)
+            .fontWeight(.semibold)
     }
 }
 
