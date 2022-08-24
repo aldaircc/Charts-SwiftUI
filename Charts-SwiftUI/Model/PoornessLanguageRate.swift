@@ -7,9 +7,18 @@
 
 import Foundation
 
-enum Language {
-    case Spanish(rate: Double)
-    case Native(rate: Double)
+enum Language: CustomStringConvertible {
+    case Spanish(Double)
+    case Native(Double)
+
+    var description: String {
+        switch self {
+        case .Spanish(_):
+            return "Español"
+        case .Native(_):
+            return "Lengua nativa 1/"
+        }
+    }
 }
 
 struct LanguagePoornessRate {
