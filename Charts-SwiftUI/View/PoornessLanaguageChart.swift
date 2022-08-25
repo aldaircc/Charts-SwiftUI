@@ -6,13 +6,23 @@
 //
 
 import SwiftUI
+import Charts
 
 struct PoornessLanaguageChart: View {
     var body: some View {
-        Text("Perú: Incidencia de la pobreza, según lengua materna, 2008 - 2019")
-            .multilineTextAlignment(.center)
-            .foregroundColor(.blue)
-            .fontWeight(.semibold)
+        VStack {
+            Text("Perú: Incidencia de la pobreza, según lengua materna, 2008 - 2019")
+                .multilineTextAlignment(.center)
+                .foregroundColor(.blue)
+                .fontWeight(.semibold)
+            
+            Chart(LanguagePoornessRate.data) { obj in
+                BarMark(
+                    x: .value("Year", String(obj.year)),
+                    y: .value("Rate", obj.kind.rate))
+                .foregroundStyle(by: .value("Language", obj.kind.description))
+            }
+        }
     }
 }
 

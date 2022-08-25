@@ -19,11 +19,20 @@ enum Language: CustomStringConvertible {
             return "Lengua nativa 1/"
         }
     }
+    
+    var rate: Double {
+        switch self {
+        case .Spanish(let rate):
+            return rate
+        case .Native(let rate):
+            return rate
+        }
+    }
 }
 
-struct LanguagePoornessRate {
+struct LanguagePoornessRate: Identifiable {
     let id = UUID()
-    let kind: Language
+    let kind: [Language]
     let year: Int
     
     static let data = [
