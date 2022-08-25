@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Language: CustomStringConvertible {
+enum Language: CustomStringConvertible, Hashable {
     case Spanish(Double)
     case Native(Double)
 
@@ -36,29 +36,17 @@ struct LanguagePoornessRate: Identifiable {
     let year: Int
     
     static let data = [
-        LanguagePoornessRate(kind: .Native(60), year: 2008),
-        LanguagePoornessRate(kind: .Native(53.8), year: 2009),
-        LanguagePoornessRate(kind: .Native(49.7), year: 2010),
-        LanguagePoornessRate(kind: .Native(44.4), year: 2011),
-        LanguagePoornessRate(kind: .Native(40.4), year: 2012),
-        LanguagePoornessRate(kind: .Native(35.9), year: 2013),
-        LanguagePoornessRate(kind: .Native(35.4), year: 2014),
-        LanguagePoornessRate(kind: .Native(33.4), year: 2015),
-        LanguagePoornessRate(kind: .Native(32.6), year: 2016),
-        LanguagePoornessRate(kind: .Native(33), year: 2017),
-        LanguagePoornessRate(kind: .Native(32.4), year: 2018),
-        LanguagePoornessRate(kind: .Native(30.5), year: 2019),
-        LanguagePoornessRate(kind: .Spanish(31.6), year: 2008),
-        LanguagePoornessRate(kind: .Spanish(28.5), year: 2009),
-        LanguagePoornessRate(kind: .Spanish(26.1), year: 2010),
-        LanguagePoornessRate(kind: .Spanish(23.6), year: 2011),
-        LanguagePoornessRate(kind: .Spanish(22.2), year: 2012),
-        LanguagePoornessRate(kind: .Spanish(20.8), year: 2013),
-        LanguagePoornessRate(kind: .Spanish(19.5), year: 2014),
-        LanguagePoornessRate(kind: .Spanish(18.8), year: 2015),
-        LanguagePoornessRate(kind: .Spanish(17.8), year: 2016),
-        LanguagePoornessRate(kind: .Spanish(18.6), year: 2017),
-        LanguagePoornessRate(kind: .Spanish(17.5), year: 2018),
-        LanguagePoornessRate(kind: .Spanish(17.6), year: 2019)
+        LanguagePoornessRate(kind: [.Native(60), .Spanish(31.6)], year: 2008),
+        LanguagePoornessRate(kind: [.Native(53.8), .Spanish(28.5)], year: 2009),
+        LanguagePoornessRate(kind: [.Native(49.7), .Spanish(26.1)], year: 2010),
+        LanguagePoornessRate(kind: [.Native(44.4), .Spanish(23.6)], year: 2011),
+        LanguagePoornessRate(kind: [.Native(40.4), .Spanish(22.2)], year: 2012),
+        LanguagePoornessRate(kind: [.Native(35.9), .Spanish(20.8)], year: 2013),
+        LanguagePoornessRate(kind: [.Native(35.4), .Spanish(19.5)], year: 2014),
+        LanguagePoornessRate(kind: [.Native(33.4), .Spanish(18.8)], year: 2015),
+        LanguagePoornessRate(kind: [.Native(32.6), .Spanish(17.8)], year: 2016),
+        LanguagePoornessRate(kind: [.Native(33), .Spanish(18.6)], year: 2017),
+        LanguagePoornessRate(kind: [.Native(32.4), .Spanish(17.5)], year: 2018),
+        LanguagePoornessRate(kind: [.Native(30.5), .Spanish(17.6)], year: 2019)
     ]
 }

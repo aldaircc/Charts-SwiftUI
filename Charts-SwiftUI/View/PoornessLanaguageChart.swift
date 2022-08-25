@@ -17,10 +17,21 @@ struct PoornessLanaguageChart: View {
                 .fontWeight(.semibold)
             
             Chart(LanguagePoornessRate.data) { obj in
-                BarMark(
-                    x: .value("Year", String(obj.year)),
-                    y: .value("Rate", obj.kind.rate))
-                .foregroundStyle(by: .value("Language", obj.kind.description))
+                ForEach(obj.kind, id: \.self) { kind in
+//                    BarMark(
+//                        x: .value("Year", String(obj.year)),
+//                        y: .value("Rate", kind.rate),
+//
+//                        stacking: MarkStackingMethod.center)
+//                    .foregroundStyle(by: .value("Language", kind.description))
+                    
+                    BarMark(
+                        x: .value("Year", String(obj.year)),
+                        y: .value("Rate", kind.rate),
+
+                        stacking: MarkStackingMethod.unstacked)
+                    .foregroundStyle(by: .value("Language", kind.description))
+                }
             }
         }
     }
