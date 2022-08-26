@@ -31,10 +31,12 @@ struct PoornessLanaguageChart: View {
 
                         stacking: MarkStackingMethod.unstacked)
                     .annotation(
-                        position: AnnotationPosition.overlay,
+                        position: .overlay,
                         alignment: .center,
                         spacing: 0, content: {
-                            Text(verbatim: kind.rate)
+                            Text(verbatim: "\(kind.rate)")
+                                .font(.system(size: 10))
+                                .foregroundColor(.white)
                         })
                     .foregroundStyle(by: .value("Language", kind.description))
                 }
