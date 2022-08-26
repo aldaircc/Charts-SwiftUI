@@ -30,6 +30,7 @@ struct PoornessLanaguageChart: View {
                         y: .value("Rate", kind.rate),
 
                         stacking: MarkStackingMethod.unstacked)
+                    .annotation(position: <#T##AnnotationPosition#>, alignment: <#T##Alignment#>, spacing: <#T##CGFloat?#>, content: <#T##() -> View#>)
                     .foregroundStyle(by: .value("Language", kind.description))
                 }
             }
