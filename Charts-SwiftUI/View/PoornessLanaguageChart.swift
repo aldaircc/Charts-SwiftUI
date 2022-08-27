@@ -41,6 +41,10 @@ struct PoornessLanaguageChart: View {
                     .foregroundStyle(by: .value("Language", kind.description))
                 }
             }
+            .overlay {
+                RoundedRectangle(cornerRadius: 9, style: .continuous)
+                    .stroke(lineWidth: 1)
+            }
         }
     }
 }
