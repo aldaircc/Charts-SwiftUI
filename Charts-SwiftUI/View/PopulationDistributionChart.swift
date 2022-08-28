@@ -12,6 +12,10 @@ struct PopulationDistributionChart: View {
     var body: some View {
         VStack {
             Text("Perú: Distribución de la población por sexo y edad, 1950 (En porcentaje)")
+                .multilineTextAlignment(.center)
+                .font(.system(size: 11))
+                .foregroundColor(.blue)
+            
             Chart(distributionData) { object in
                 RectangleMark(xStart: .value("Percent", 0),
                               xEnd: .value("Percent", object.percent),
