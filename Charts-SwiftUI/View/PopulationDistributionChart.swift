@@ -13,7 +13,8 @@ struct PopulationDistributionChart: View {
         VStack {
             Text("Perú: Distribución de la población por sexo y edad, 1950 (En porcentaje)")
                 .multilineTextAlignment(.center)
-                .font(.system(size: 11))
+                .font(.system(size: 12))
+                .fontWeight(.semibold)
                 .foregroundColor(.blue)
             
             Chart(distributionData) { object in
