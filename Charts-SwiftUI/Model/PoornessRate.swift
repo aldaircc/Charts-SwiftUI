@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AgeRange: Hashable {
+enum PoornessAgeRange: Hashable {
     case _0To4(Double)
     case _5To9(Double)
     case _10To14(Double)
@@ -60,20 +60,20 @@ enum AgeRange: Hashable {
     }
 }
 
-let poornessData: [AgeRange] = [
-    AgeRange._0To4(31),
-    AgeRange._5To9(28.5),
-    AgeRange._10To14(28),
-    AgeRange._15To19(22.3),
-    AgeRange._20To24(16.4),
-    AgeRange._25To29(16.4),
-    AgeRange._30To34(21.2),
-    AgeRange._35To39(20.5),
-    AgeRange._40To44(18.3),
-    AgeRange._45To49(16),
-    AgeRange._50To54(14),
-    AgeRange._55To59(13.3),
-    AgeRange._60To64(13.2),
-    AgeRange._65To69(14.3),
-    AgeRange._70ToMore(16.2)
+let poornessData: [PoornessAgeRange] = [
+    PoornessAgeRange._0To4(31),
+    PoornessAgeRange._5To9(28.5),
+    PoornessAgeRange._10To14(28),
+    PoornessAgeRange._15To19(22.3),
+    PoornessAgeRange._20To24(16.4),
+    PoornessAgeRange._25To29(16.4),
+    PoornessAgeRange._30To34(21.2),
+    PoornessAgeRange._35To39(20.5),
+    PoornessAgeRange._40To44(18.3),
+    PoornessAgeRange._45To49(16),
+    PoornessAgeRange._50To54(14),
+    PoornessAgeRange._55To59(13.3),
+    PoornessAgeRange._60To64(13.2),
+    PoornessAgeRange._65To69(14.3),
+    PoornessAgeRange._70ToMore(16.2)
 ]
