@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct <#name#> {
-    <#fields#>
+struct OptionMenuModel: Identifiable {
+    let id = UUID()
+    let name: String
+    let chartType: String
 }
