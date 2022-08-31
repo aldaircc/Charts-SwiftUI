@@ -13,7 +13,7 @@ struct MenuView: View {
             VStack(alignment: .leading) {
                 ForEach(OptionMenuModel.options) { option in
                     //Text(option.name)
-                    NavigationLink(option.name, destination: Text("x"))
+                    NavigationLink(option.name, destination: DensityPopulationChart())
                 }
             }
             .navigationBarHidden(true)
