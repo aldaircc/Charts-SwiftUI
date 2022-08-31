@@ -20,6 +20,7 @@
 		056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CD286AB09E00D17994 /* NatalityRate.swift */; };
 		0579935B28A72E8F0047061F /* PoornessRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579935A28A72E8F0047061F /* PoornessRate.swift */; };
 		0579935D28A72EB20047061F /* PoornessChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579935C28A72EB20047061F /* PoornessChart.swift */; };
+		0592D79228BF0DB00080F03A /* OptionMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592D79128BF0DB00080F03A /* OptionMenuModel.swift */; };
 		05ACB47A2861521B00E9B330 /* Charts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */; };
 		05ACB47C2861521B00E9B330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ACB47B2861521B00E9B330 /* ContentView.swift */; };
 		05ACB47E2861521C00E9B330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05ACB47D2861521C00E9B330 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		056BE3CD286AB09E00D17994 /* NatalityRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRate.swift; sourceTree = "<group>"; };
 		0579935A28A72E8F0047061F /* PoornessRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoornessRate.swift; sourceTree = "<group>"; };
 		0579935C28A72EB20047061F /* PoornessChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoornessChart.swift; sourceTree = "<group>"; };
+		0592D79128BF0DB00080F03A /* OptionMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionMenuModel.swift; sourceTree = "<group>"; };
 		05ACB4762861521B00E9B330 /* Charts-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05ACB4792861521B00E9B330 /* Charts_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_SwiftUIApp.swift; sourceTree = "<group>"; };
 		05ACB47B2861521B00E9B330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				05219D3F28AB483100E7995D /* HomeAdultRate.swift */,
 				054B914028B097F9006B78F1 /* UnemploymentRate.swift */,
 				05D38B5C28B4868C00B3FF1C /* PoornessLanguageRate.swift */,
+				0592D79128BF0DB00080F03A /* OptionMenuModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */,
 				05C9663D2898D1AD00CA1E97 /* HomeBasicService.swift in Sources */,
 				05C9663F2898D58200CA1E97 /* AvailabiltyServiceChart.swift in Sources */,
+				0592D79228BF0DB00080F03A /* OptionMenuModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
