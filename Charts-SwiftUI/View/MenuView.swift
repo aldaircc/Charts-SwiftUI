@@ -9,9 +9,14 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        VStack {
-            Text("Tipos de graficos")
+        NavigationView {
+            VStack(alignment: .leading) {
+                ForEach(OptionMenuModel.options) { option in
+                    Text(option.name)
+                }
+            }
         }
+        
     }
 }
 
