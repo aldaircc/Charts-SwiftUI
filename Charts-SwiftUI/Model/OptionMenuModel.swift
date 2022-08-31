@@ -27,9 +27,18 @@ enum ChartType: String {
 struct OptionMenuModel: Identifiable {
     let id = UUID()
     let name: String
-    let chartType: String
+    let chartType: ChartType
     
     static let options: [OptionMenuModel] = [
-        .init(name: "Densidad poblaciónal por paises", chartType: <#T##String#>)
+        .init(name: "Densidad poblaciónal por paises", chartType: .barmark),
+        .init(name: "Tasa de crecimiento", chartType: .barmark),
+        .init(name: "Tasa bruta de natalidad", chartType: .barmark),
+        .init(name: "Hogares con adulto mayor", chartType: .barmark),
+        .init(name: "Hogares con servicios tecnologicos", chartType: .barmark),
+        .init(name: "Evolución del PIB", chartType: .barmark),
+        .init(name: "Incidencia de pobreza por edad", chartType: .barmark),
+        .init(name: "Hogares con adulto mayor por Tipo hogar", chartType: .barmark),
+        .init(name: "Tasa de desempleo por edad", chartType: .barmark),
+        .init(name: "Incidencia de pobreza por lengua", chartType: .barmark)
     ]
 }
