@@ -12,7 +12,6 @@ struct MenuView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 ForEach(OptionMenuModel.options) { option in
-                    //Text(option.name)
                     NavigationLink(option.name, destination: DensityPopulationChart())
                 }
             }
