@@ -12,11 +12,16 @@ struct MenuView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 ForEach(OptionMenuModel.options) { option in
-                    NavigationLink(option.name, destination: DensityPopulationChart())
+                    NavigationLink(option.name, destination: determineDestiny())
                 }
             }
             .navigationBarHidden(true)
         }
+    }
+    
+    @ViewBuilder
+    func determineDestiny() -> some View {
+        Text("Hello world!")
     }
 }
 
