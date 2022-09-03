@@ -28,6 +28,7 @@ struct OptionMenuModel: Identifiable {
     let id = UUID()
     let name: String
     let chartType: ChartType
+    let destiny: DestinyView
     
     static let options: [OptionMenuModel] = [
         .init(name: "Densidad poblaciónal por paises", chartType: .barmark),
