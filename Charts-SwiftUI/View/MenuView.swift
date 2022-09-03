@@ -11,10 +11,6 @@ struct MenuView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-//                ForEach(OptionMenuModel.options) { option in
-//                    NavigationLink(option.name, destination: determineDestiny())
-//                }
-                
                 List(OptionMenuModel.options, id: \.id) { option in
                     NavigationLink(destination: determineDestiny()) {
                         Text("\(option.name)")
