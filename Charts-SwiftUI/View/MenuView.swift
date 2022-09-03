@@ -12,7 +12,7 @@ struct MenuView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 List(OptionMenuModel.options, id: \.id) { option in
-                    NavigationLink(destination: determineDestiny()) {
+                    NavigationLink(destination: determineDestiny(option.destiny)) {
                         Text("\(option.name)")
                     }
                 }
@@ -22,8 +22,19 @@ struct MenuView: View {
     }
     
     @ViewBuilder
-    func determineDestiny() -> some View {
-        Text("Hello world!")
+    func determineDestiny(_ destiny: DestinyTarget) -> some View {
+        switch destiny {
+        case .densityPopulation: DensityPopulationChart()
+        case .growingRate: GrowingRateChart()
+        case .natalityRate: NatalityRateChart()
+        case .availabilityService: AvailabiltyServiceChart()
+        case .accessIt: AccessItChart()
+        case .pbiEvolution: pbiEvolutionChart()
+        case .poorness: PoornessChart()
+        case .homeAdult: HomeAdultChart()
+        case .unemployment: UnemploymentChart()
+        case .poornessLanguage: PoornessChart()
+        }
     }
 }
 
