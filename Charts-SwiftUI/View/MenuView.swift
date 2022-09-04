@@ -13,7 +13,7 @@ struct MenuView: View {
             VStack(alignment: .leading) {
                 List(OptionMenuModel.options, id: \.id) { option in
                     NavigationLink(destination: determineDestiny(option.destiny)) {
-                        Text("\(option.name)")
+                        Text("\(option.name) - \(option.chartType.rawValue)")
                     }
                 }
             }
