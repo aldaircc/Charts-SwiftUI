@@ -9,7 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Hello, World!")
+        Button {
+            print("Open the side menu")
+        } label: {
+            Text("Show menu")
+        }
+
     }
 }
 
