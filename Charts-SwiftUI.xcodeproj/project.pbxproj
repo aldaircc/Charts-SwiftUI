@@ -16,6 +16,7 @@
 		054B914128B097F9006B78F1 /* UnemploymentRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B914028B097F9006B78F1 /* UnemploymentRate.swift */; };
 		054B914328B0980A006B78F1 /* UnemploymentChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B914228B0980A006B78F1 /* UnemploymentChart.swift */; };
 		05549C1228E5323D001C0F02 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05549C1128E5323D001C0F02 /* HomeView.swift */; };
+		05549C1428E53406001C0F02 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05549C1328E53406001C0F02 /* MenuView.swift */; };
 		055C898D28B9D56D00D29547 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C898C28B9D56D00D29547 /* StartView.swift */; };
 		056BE3CC286AB04500D17994 /* NatalityRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CB286AB04500D17994 /* NatalityRateChart.swift */; };
 		056BE3CE286AB09E00D17994 /* NatalityRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056BE3CD286AB09E00D17994 /* NatalityRate.swift */; };
@@ -66,6 +67,7 @@
 		054B914028B097F9006B78F1 /* UnemploymentRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnemploymentRate.swift; sourceTree = "<group>"; };
 		054B914228B0980A006B78F1 /* UnemploymentChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnemploymentChart.swift; sourceTree = "<group>"; };
 		05549C1128E5323D001C0F02 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		05549C1328E53406001C0F02 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		055C898C28B9D56D00D29547 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		056BE3CB286AB04500D17994 /* NatalityRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRateChart.swift; sourceTree = "<group>"; };
 		056BE3CD286AB09E00D17994 /* NatalityRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatalityRate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				05D38B5E28B4869A00B3FF1C /* PoornessLanaguageChart.swift */,
 				055C898C28B9D56D00D29547 /* StartView.swift */,
 				05549C1128E5323D001C0F02 /* HomeView.swift */,
+				05549C1328E53406001C0F02 /* MenuView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				05ACB4A82861580600E9B330 /* DensityPopulationChart.swift in Sources */,
 				052066B7289E207000DE1A60 /* PbiRate.swift in Sources */,
 				05E489E72868110D00E9D028 /* GrowingRate.swift in Sources */,
+				05549C1428E53406001C0F02 /* MenuView.swift in Sources */,
 				0579935B28A72E8F0047061F /* PoornessRate.swift in Sources */,
 				05E489E5286810DB00E9D028 /* GrowingRateChart.swift in Sources */,
 				0534A65128AC6F860048B9A6 /* HomeAdultChart.swift in Sources */,
