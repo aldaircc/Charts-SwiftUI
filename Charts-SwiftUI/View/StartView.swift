@@ -1,5 +1,5 @@
 //
-//  MenuView.swift
+//  StartView.swift
 //  Charts-SwiftUI
 //
 //  Created by Aldair Cosetito Coral on 26/08/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuView: View {
+struct StartView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -38,8 +38,8 @@ struct MenuView: View {
     }
 }
 
-struct MenuView_Previews: PreviewProvider {
+struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        StartView()
     }
 }

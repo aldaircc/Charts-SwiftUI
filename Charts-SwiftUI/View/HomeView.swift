@@ -9,17 +9,25 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Button {
-            print("Open the side menu")
-        } label: {
-            Text("Show menu")
+        GeometryReader { geometry in
+            MainView()
+                .frame(width: geometry.size.width, height: geometry.size.height)
         }
-
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct MainView: View {
+    var body: some View {
+        Button {
+            print("Open the side menu")
+        } label: {
+            Text("Show menu")
+        }
     }
 }
