@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MenuView: View {
-    @Binding var showMenu: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
