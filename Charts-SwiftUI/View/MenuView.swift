@@ -39,7 +39,10 @@ struct MenuView: View {
                     .font(.headline)
             }
             .padding(.top, 30)
+            Spacer()
         }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
