@@ -11,6 +11,8 @@ struct HomeView: View {
     @State var showMenu = false
     
     var body: some View {
+        let drag = DragGesture()
+        
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 MainView(showMenu: $showMenu)
