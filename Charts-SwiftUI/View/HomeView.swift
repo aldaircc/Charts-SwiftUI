@@ -20,6 +20,7 @@ struct HomeView: View {
                 if self.showMenu {
                     MenuView()
                         .frame(width: geometry.size.width / 2)
+                        .transition(.move(edge: .leading))
                 }
             }
         }
