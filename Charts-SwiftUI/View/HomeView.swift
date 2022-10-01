@@ -37,8 +37,9 @@ struct MainView: View {
     
     var body: some View {
         Button {
-            print("Open the side menu")
-            self.showMenu = true
+            withAnimation {
+                self.showMenu = true
+            }
         } label: {
             Text("Show menu")
         }
