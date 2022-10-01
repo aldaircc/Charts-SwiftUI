@@ -12,6 +12,13 @@ struct HomeView: View {
     
     var body: some View {
         let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                }
+            }
         
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
@@ -25,6 +32,7 @@ struct HomeView: View {
                         .transition(.move(edge: .leading))
                 }
             }
+            .gesture(drag)
         }
     }
 }
