@@ -40,7 +40,9 @@ struct HomeView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
-                        
+                        withAnimation {
+                            self.showMenu.toggle()
+                        }
                     }) {
                         Image(systemName: "line.horizontal.3")
                             .imageScale(.large)
