@@ -20,19 +20,33 @@ struct HomeView: View {
                 }
             }
         
-        GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                MainView(showMenu: $showMenu)
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                    .offset(x: self.showMenu ? geometry.size.width/2 : 0)
-                    .disabled(self.showMenu ? true : false)
-                if self.showMenu {
-                    MenuView()
-                        .frame(width: geometry.size.width / 2)
-                        .transition(.move(edge: .leading))
+        NavigationView {
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    MainView(showMenu: $showMenu)
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .offset(x: self.showMenu ? geometry.size.width/2 : 0)
+                        .disabled(self.showMenu ? true : false)
+                    if self.showMenu {
+                        MenuView()
+                            .frame(width: geometry.size.width / 2)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .gesture(drag)
+            }
+            .navigationTitle("Side menu")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "line.horizontal.3")
+                            .imageScale(.large)
+                    }
                 }
             }
-            .gesture(drag)
         }
     }
 }
