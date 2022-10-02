@@ -20,7 +20,7 @@ struct HomeView: View {
                 }
             }
         
-        NavigationView {
+        return NavigationView {
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
                     MainView(showMenu: $showMenu)
